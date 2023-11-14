@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Practice/BMI.css" />
+    <title>BMI Converter</title>
+  </head>
+  <body>
+    <h1>Body Mass Index Converter Supreme</h1>
+    <div class="calculations">
+      <form action="/Practice/BMI.html" method="get">
+        <fieldset>
+          <legend>BMI</legend>
+          <label for="gender">What is your gender?</label><br />
+          <input type="radio" id="gender" value="Male" />Male
+          <input type="radio" id="gender" value="Female" />Female
+          <br />
+          <label for="height"> Enter your height in (cm):</label><br />
+          <input
+            type="number"
+            id="height"
+            placeholder="Enter your height"
+            size="20"
+            maxlength="5"
+          /><br />
+          <label for="weight"> Enter your weight in (kg):</label><br />
+          <input
+            type="number"
+            id="weight"
+            placeholder="Enter you weight"
+            size="20"
+            maxlength="5"
+          /><br />
+          <br />
+          <div id="submit_button">
+            <input type="button" value="Fetch Results" />
+          </div>
+          <div class="results">
+            <p>Your BMI is</p>
+            <div id="results">00.00</div>
+            <p class="comment"></p>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
